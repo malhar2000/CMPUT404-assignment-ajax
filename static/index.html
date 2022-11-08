@@ -53,7 +53,7 @@ function sendJSONXMLHTTPRequest(url, objects, callback) {
     //XXX: set the mimetype and the accept headers!
     xhr.setRequestHeader('Content-type', 'application/json');
     // Remember to use application/json !
-    xhr.setRequestHeader('Accept', 'application/json');  let toSend = JSON.stringify(objects);
+    xhr.setRequestHeader('Accept', 'application/json');   
     xhr.send(JSON.stringify(objects));
 
 }
